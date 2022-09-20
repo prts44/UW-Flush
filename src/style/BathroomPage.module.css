@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(252, 246, 207);
+    background-color: rgb(240, 240, 240);
 }
 
 .container {
@@ -11,8 +11,24 @@ body {
     align-items: center;
 }
 
+.image {
+    position: absolute;
+    top: -30vh;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0.5px 0.4px 3px 1px rgb(180, 180, 180);
+}
+
+.image img {
+    top: -10vh;
+    width: 100%;
+    object-fit: contain;
+    object-position: center top;
+}
+
 .overview {
-    margin-top: 4%;
+    z-index: 1;
+    margin-top: 24%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,21 +37,17 @@ body {
     box-shadow: 0.5px 0.4px 3px 1px rgb(180, 180, 180);
 }
 
-.overview div {
-    width: 100%;
-}
-
-.name {
-    margin-left: 20px;
+h1 {
+    margin-left: 40px;
     display: flex;
-    text-align: left;
     align-items: left;
-    justify-content: left;
+    width: 100%;
 }
 
 .stats {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .stats span {
@@ -49,4 +61,11 @@ body {
 
 .stats h4 {
     margin: 0;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
